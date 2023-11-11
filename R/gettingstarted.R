@@ -1,7 +1,6 @@
-
+#' importFrom keras dataset_imdb
 run <- function() {
-  library(keras)
-  imdb <- dataset_imdb(num_words = 10000)
+  imdb <- keras::dataset_imdb(num_words = 10000)
   train_data <- imdb$train$x
   train_labels <- imdb$train$y
   test_data <- imdb$test$x
